@@ -1,7 +1,8 @@
 #ifndef	NVIC_PRIVATE_H
 #define	NVIC_PRIVATE_H
 	#define NVIC_BASE_ADDRESS	0xE000E100
-	#include<STD_TYPES.h>
+	#include"../../LIB/STD_TYPES.h"
+	#include"../../LIB/BIT_MATHS.h"
 	typedef struct{
 		volatile u32 NVIC_ISER[8];
 		volatile u32 RESERVED1[24];

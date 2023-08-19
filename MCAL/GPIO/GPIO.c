@@ -1,5 +1,5 @@
-#include "STD_TYPES.h"
-#include "BIT_MATHS.h"
+#include"../../LIB/STD_TYPES.h"
+#include"../../LIB/BIT_MATHS.h"
 #include "GPIO_interface.h"
 #include "GPIO_private.h"
 
