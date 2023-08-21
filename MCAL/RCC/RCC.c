@@ -9,8 +9,8 @@ void RCC_voidInit(void){
 #if RCC_SYSCLK==RCC_HSI
 	SET_BIT(RCC->RCC_CR,0); //enable HSI CLK
 	while(GET_BIT(RCC->RCC_CR,1)==0); //waiting HSIRDY
-	CLEAR_BIT(RCC->RCC_CFGR,1);
 	CLEAR_BIT(RCC->RCC_CFGR,0);
+	CLEAR_BIT(RCC->RCC_CFGR,1);
 	/*************HSE**************/
 #elif RCC_SYSCLK==RCC_HSE
 
